@@ -26,19 +26,19 @@ cs180/
 │   └── videos.md
 │
 ├── week01-web-foundations/
-│   ├── examples/
-│   └── videos.md
+│   ├── example/
+│   └── html_JS.md
 ├── week02-javascript/
 │   ├── example/
 │   └── videos.md
 ├── week03-cpp/
-│   ├── examples/
+│   ├── example/
 │   └── videos.md
 ├── week04-cpp-python/
-│   ├── examples/
+│   ├── example/
 │   └── videos.md
 └── week05-python-advanced/
-│   ├── examples/
+│   ├── example/
 │   └── videos.md
 └── README.md
 ```
