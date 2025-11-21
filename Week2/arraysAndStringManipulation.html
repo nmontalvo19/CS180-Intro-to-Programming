@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- html, heading languag title-->
+ <html>
+    <html lang="en">
+        <head>
+            <!-- set to enter characters and emojis-->
+             <html charset="UTF-8">
+            <!-- create title-->
+                <title>Arrays & String Manipulation</title>
+        </head>
+        <body>
+            <h1>Your color from your number</h1>
+            <button onclick="getColor()">Get My Color!</button>
+            <h2>String Manipulation</h2>
+            <button onclick="stringManipulation()">Magic Sentence Changing</button>
+            
+            <!--javascript-->
+
+            <script>
+// Function to get color based on number
+function getColor() {
+    // create array of colors
+    let colors = ["Red", "Green", "Blue", "Yellow", "Purple", "Orange"];
+    // ask the user for a number
+    let number = prompt("Enter a number between 0 and " + (colors.length - 1) + ":");
+    // convert the number to an integer
+    number=Number(number);
+    if (number >= 0 && number < 6){
+        // display the color
+        alert("Your color is: " + colors[number]);  
+    } else {
+        alert("Invalid number. ")
+    }
+}
+
+// Function to manipulate a string
+function stringManipulation() {
+//let user enter a sentence
+let sentence = prompt("Enter a sentence:");
+// make uppercase
+alert("Uppercase: " + sentence.toUpperCase());
+// make lowercase
+alert("Lowercase: " + sentence.toLowerCase());
+//display the length of the sentence
+alert("Length: " + sentence.length);
+//display the first character as uppercase
+alert("First character: " + sentence.charAt(0).toUpperCase());
+// display 5th character as uppercase
+alert("5th character: " + sentence.charAt(4).toUpperCase());
+}
+</script>
+
+        
+        </body>
+            </html>

@@ -1,0 +1,43 @@
+<!--Create document type-->
+<!DOCTYPE html>
+<html>
+    <!--Create header-->
+    <head>
+        <title> Switch Statement</title>
+    </head>
+    <body>
+        <h2> Day Checker</h2>
+        <button onclick="checkDay()">Days and Confused</button>
+    
+    <script>
+        function checkDay()
+        {
+            // ask the user for the day?
+            let day = prompt("What day is today? (pick Sunday to Saturday)");
+        // compare the day to the switch statement
+        day = day.toLowerCase();
+            switch(day)
+            {
+                case "sunday":
+                    alert("Sunday Funday!");
+                    break;
+                case "monday":
+                    alert("Monday Blues!");
+                    break;
+                case "friday":
+                    alert("Friday is here!");
+                    break;
+                case "saturday":
+                    alert("Saturday is for fun!");
+                    break;
+                default:
+                    alert("I want it to be the weekend!");
+
+        
+    }
+        // end of function
+    }
+        // end of script
+    </script>
+    </body>
+</html>

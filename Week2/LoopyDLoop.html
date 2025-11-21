@@ -1,0 +1,71 @@
+<!-- set doc as html-->
+ <!DOCTYPE html>
+ <head>
+ <!-- set language as English-->
+  <html lang="en">
+<!-- allow for characters and emojis-->
+    <meta charset="UTF-8">
+<!-- create title-->
+     <title>JavaScript Loop Examples</title>    
+</head>
+<body>
+    <h1> Loop Examples</h1>
+    <h2> For Loop Example</h2>
+    <button onclick="forLoop()">Count on Me!</button>
+    <h2> While Loop Example</h2>
+    <button onclick="whileLoop()">Let me in!</button>
+    <h2> Do While Loop Example</h2>
+    <button onclick="doWhileLoop()">Can I do it?</button>
+
+<script>
+// For Loop Example
+function forLoop()
+{
+    // ask the user for a number to count to
+let limit = prompt("Count to what number?");
+    // create a variable to hold the count
+    limit = Number(limit);
+
+    // create a for loop to count to the number
+    for(let i = 1; i <= limit; i++) 
+{
+        // display the count
+       console.log("For Loop Count: "+i);
+    }
+    alert("For loop done. Check the console for the count.");
+}
+
+// While Loop Example
+function whileLoop()
+{
+    //create a password
+    const correctPassword = "CS180";
+    // variable password to hold the user input
+    let password = "";
+
+    // create a while loop to ask for the password
+    while(password !== correctPassword)
+{
+        // ask the user for the password
+        password = prompt("Enter the password:");
+    }
+    alert("ACCESS GRANTED!");
+}
+
+// Do While Loop Example
+function doWhileLoop()
+{
+    let number;
+    // ask the user for a number
+    do {
+        number = prompt ("Enter a number greater than 10:)");
+        // check if the number is greater than 10
+        number = Number(number);
+    }while (number <= 10);
+
+    // display the number
+    alert("Thanks for the $" + number);
+}
+</script>
+</body>
+

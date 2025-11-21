@@ -1,0 +1,32 @@
+<!DOCTYPE html> <!-- type of document-->
+<!--language of document-->
+<html lang="en">
+<head><title> "Grade Evaluator</title></head> 
+<body>
+    <h2>Grade Evaluator</h2>
+    <button onclick="evaluateGrade()">Gimmie Grade</button>
+</body>
+<script>
+    function evaluateGrade() 
+    {
+        // ask the user for a grade
+        let grade = prompt("Enter a grade (0-100):");
+        // check if the input is a >90
+        if (grade >= 90) 
+        {
+            alert("Grade: A");
+        }
+        // check if the input is a >80
+        else if (grade >= 80 && grade < 90) 
+        {
+            alert("Grade: B");
+        }
+        else 
+        {
+            alert("Grade: C or lower");
+        }
+        }
+            
+</script>
+
+</html>
